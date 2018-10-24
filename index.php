@@ -27,13 +27,7 @@ class User {
 		return $this->comments;
 	}
 	public function delComment($comment_id, $id_autor){
-		/*if ($id_autor === $this->user->id) {
-			return $this->comments.foreach(($comm) => {
-				if ($comm->id === $comment_id) {
-					$this->comments.array_splice($key, 1);
-				}
-			});
-		}*/
+		
 		return null;
 	}
 
@@ -92,7 +86,7 @@ foreach ($user->comments as $comm) {?>
 </tbody>
 </table>
 	
-		<button><a href="Lab_1_BackEnd.php?send=2">Submit</a></button>
+		<button><a href="Lab_1.php?send=2">Submit</a></button>
 
 </body>
 </html>
@@ -119,24 +113,3 @@ foreach ($user->comments as $comm) {?>
 
 
 
-<!-- /*//////////Sarcina 1/////////////////
-USE `Lab_1`;
-CREATE TABLE `comentarii` (
-	`id` INT NULL,
-	`comentariu` VARCHAR(50) NULL,
-	`id_autor` INT NULL
-)
-COMMENT='Sarcina 1';
-////////////////////////////////////
-
-//////////Sarcina 2////////////////
-
-USE `Lab_1`;
-CREATE TABLE `users` (
-	`id` INT NULL,
-	`user` VARCHAR(50) NULL,
-	`parola` VARCHAR(50) NULL,
-	`grupa` VARCHAR(50) NULL
-)
-COMMENT='Sarcina 2';
-///////////////////////////////////*/ -->
