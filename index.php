@@ -10,15 +10,15 @@ class User {
 	public $comments = [];
 	public $grupa = "Administrator";
 	public $user = "User1";
-	protected $id = 2;
-	private $pass = 1234;
+	protected $id = 3;
+	private $pass = qwert;
 
 	public function readComments(){
 		return $this->comments;
 	}
 
 	public function postComment($id, $comment, $id_autor){
-		echo 'sdfsdfsdf';
+		echo 'zxcv';
 		$temp;
 		$temp->id = $id;
 		$temp->comment = $comment;
@@ -43,7 +43,7 @@ class Moderator extends User {
 $user = new User();
 $user->comments[0]->id = 1;
 $user->comments[0]->comment = 'Comment1';
-$user->comments[0]->id_autor = 10;
+$user->comments[0]->id_autor = 7;
 echo '<hr/>User = ' . $user->user;
 echo '<hr/>User_ID = ' . $user->grupa;
 echo '<hr/>Comments = ' . $user->comments[0]->comment;
@@ -86,7 +86,7 @@ foreach ($user->comments as $comm) {?>
 </tbody>
 </table>
 	
-		<button><a href="Lab_1.php?send=2">Submit</a></button>
+		<button><a href="BA_lab1.php?send=2">Submit</a></button>
 
 </body>
 </html>
